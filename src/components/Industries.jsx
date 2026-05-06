@@ -84,7 +84,7 @@ export default function Industries() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.55, delay: i * 0.09 }}
               whileHover={{ y: -6, scale: 1.02 }}
-              className="relative p-6 rounded-2xl text-center cursor-default overflow-hidden group"
+              className="relative px-2 py-3 sm:p-6 rounded-2xl text-center cursor-default overflow-hidden group"
               style={{
                 background: "rgba(255,255,255,0.04)",
                 border: "1px solid rgba(255,255,255,0.07)",

@@ -117,14 +117,14 @@ function ServiceCard({ Icon, title, pills, focus, index }) {
 
       {/* Focus tag */}
       <div
-        className="inline-flex items-center gap-2 text-purple-300 text-xs font-medium rounded-lg px-3.5 py-2 relative z-10 mt-auto"
+        className="inline-flex justify-center items-center gap-2 text-purple-300 text-xs font-medium rounded-lg px-3.5 py-2 relative z-10 mt-auto"
         style={{
           background: "rgba(139,92,246,0.12)",
           border: "1px solid rgba(139,92,246,0.28)",
         }}
       >
         {/* <span>👉</span> */}
-        <span>Focus: {focus}</span>
+        <span className="text-center">Focus: {focus}</span>
       </div>
     </motion.div>
   );
