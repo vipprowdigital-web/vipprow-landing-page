@@ -11,7 +11,7 @@ const clientLogos = [
   },
   {
     name: "Gargi Dental Care",
-    logo: "https://scontent.fbho2-1.fna.fbcdn.net/v/t39.30808-1/305966059_446571217493191_8221177843274636942_n.png?stp=dst-png_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=CiZ87QiVwcMQ7kNvwEBJ41z&_nc_oc=Adq75r5-wCix4J1TiPDEzVDqXRg_BT2rUE4DiAQvBfuca-WKYzP3Easg-xzHZNBx6x2kvzt3LRajtBZsyNTKp1sD&_nc_zt=24&_nc_ht=scontent.fbho2-1.fna&_nc_gid=E13UpWhOvAmc0BsB0Zj78w&_nc_ss=7b2a8&oh=00_Af40pgji_FRbgpSy9jW64rsd4ZTUFAgCfkl8BX2qmzL1AA&oe=69FF595C",
+    logo: "/images/gargi-dental-care-logo.png",
     domain: "Healthcare",
   },
   {
@@ -26,7 +26,7 @@ const clientLogos = [
   },
   {
     name: "He N She Store",
-    logo: "https://scontent.fbho2-1.fna.fbcdn.net/v/t39.30808-1/298526591_5224293917690949_4648944138829242262_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=a3igGQreYOsQ7kNvwF3Rmlf&_nc_oc=AdqwZJ2OeFPkn4quyWvM7Vl1iTxJZqMu8gAKHazmyLRQaWmFUMKhJfDaJpVD2liects3Z3KDeMoUOq7oqprpVcGZ&_nc_zt=24&_nc_ht=scontent.fbho2-1.fna&_nc_gid=sl-Fz6RbtTEFqXEOtVWUoQ&_nc_ss=7b2a8&oh=00_Af6QcObRt8T1NhC_Br-fZbfGysiiXMEPMh-g1QRSPZcqeg&oe=69FF6D47",
+    logo: "/images/he-and-she-logo.jpg",
     domain: "Electrical's & Electronics",
   },
   {
