@@ -10,6 +10,7 @@ import FAQSection from "../components/FAQSection.jsx";
 import { FAQS_PAGE_1 } from "../seeds/FAQs.js";
 import LogoConveyor from "../components/LogoConveyer.jsx";
 import { clientLogos } from "../seeds/clientLogos.js";
+import GoogleReviews from "../components/GoogleReviews.jsx";
 
 // ── Divider between sections ───────────────────────────────────────────────
 // const Divider = () => (
@@ -34,6 +35,8 @@ export default function HomePage() {
       {/* <Stats /> */}
       {/* <Divider /> */}
       <Results />
+      <Divider />
+      <GoogleReviews />
       <Divider />
       <LogoConveyor data={clientLogos} />
       <Divider />

@@ -421,10 +421,10 @@ const FOOTER_COLS = [
     heading: "Company",
     links: ["About", "Portfolio"],
   },
-  {
-    heading: "Contact",
-    links: ["vipprowdigital@gmail.com", "+91 96699 32121", "Jabalpur, India"],
-  },
+  // {
+  //   heading: "Contact",
+  //   links: ["vipprowdigital@gmail.com", "+91 96699 32121", "Jabalpur, India"],
+  // },
 ];
 
 // const SOCIALS = [
@@ -490,18 +490,13 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer
+      {/* <footer
         className="relative z-10 px-6 md:px-10 pt-12 pb-8"
         style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
       >
         <div className="max-w-6xl mx-auto">
-          {/* Top row */}
           <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
-            {/* Brand */}
             <div>
-              {/* <div className="font-sora text-xl font-extrabold tracking-widest gradient-text mb-2">
-                VIPPROW
-              </div> */}
               <img
                 src="/images/vipprow-logo-removebg-preview.png"
                 alt="VIPPROW Logo"
@@ -517,7 +512,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Link columns */}
             <div className="flex flex-wrap gap-10">
               {FOOTER_COLS.map((col) => (
                 <div key={col.heading}>
@@ -538,38 +532,137 @@ export default function Footer() {
                   </ul>
                 </div>
               ))}
+              <div className="flex flex-wrap gap-10">
+                <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
+                  Contact
+                </h4>
+                <ul className="flex flex-col gap-2.5 list-none">
+                  <li>
+                    <a
+                      href="mailto:vipprowdigital@gmail.com"
+                      className="text-[0.78rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      vipprowdigital@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="tel:9669932121"
+                      className="text-[0.78rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      +91 96699 32121
+                    </a>
+                  </li>
+                  <li className="text-[0.78rem] text-white/50 hover:text-white transition-colors duration-200">
+                    Jabalpur, India
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          {/* Bottom row */}
           <div
             className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6"
             style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
           >
             <p className="text-white/25 text-xs">
-              © {new Date().getFullYear()} VIPPROW. All rights reserved.
+              &copy; {new Date().getFullYear()} VIPPROW. All rights reserved.
             </p>
+          </div>
+        </div>
+      </footer> */}
+      {/* Top row */}
+      <footer
+        className="relative z-10 px-6 md:px-10 pt-12 pb-8"
+        style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between gap-14 mb-12">
+            {/* BRAND */}
 
-            {/* <div className="flex gap-2">
-              {SOCIALS.map(({ icon: Icon, label }) => (
-                <motion.a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  whileHover={{
-                    scale: 1.1,
-                    borderColor: "rgba(139,92,246,0.5)",
-                  }}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center"
-                  style={{
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.07)",
-                  }}
-                >
-                  <Icon size={15} color="rgba(255,255,255,0.45)" />
-                </motion.a>
+            <div className="lg:max-w-md">
+              <img
+                src="/images/vipprow-logo-removebg-preview.png"
+                alt="VIPPROW Logo"
+                className="w-40 mb-4"
+              />
+
+              <p className="text-white/25 text-sm leading-relaxed">
+                Let Vipprow be your partner in achieving unparalleled digital
+                success. Together, we’ll create impactful stories that resonate
+                with your audience and deliver lasting results.
+              </p>
+
+              <p className="text-white/45 mt-4 text-sm italic">
+                Build. Scale. Dominate.
+              </p>
+            </div>
+
+            {/* LINKS */}
+
+            <div className="grid grid-cols-2 gap-x-14 gap-y-10">
+              {/* DYNAMIC COLS */}
+
+              {FOOTER_COLS.map((col) => (
+                <div key={col.heading}>
+                  <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
+                    {col.heading}
+                  </h4>
+
+                  <ul className="flex flex-col gap-2.5 list-none">
+                    {col.links.map((link) => (
+                      <li key={link}>
+                        <a
+                          href="/"
+                          className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                        >
+                          {link}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </div> */}
+
+              {/* CONTACT */}
+
+              <div>
+                <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
+                  Contact
+                </h4>
+
+                <ul className="w-full flex flex-col gap-2.5 list-none">
+                  <li>
+                    <a
+                      href="mailto:vipprowdigital@gmail.com"
+                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      vipprowdigital@gmail.com
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="tel:9669932121"
+                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      +91 96699 32121
+                    </a>
+                  </li>
+
+                  <li className="text-[0.8rem] text-white/50">
+                    Jabalpur, India
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+          >
+            <p className="text-white/25 text-xs">
+              &copy; {new Date().getFullYear()} VIPPROW. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
@@ -795,3 +888,26 @@ export default function Footer() {
 //     </form>
 //   );
 // }
+
+{
+  /* <div className="flex gap-2">
+              {SOCIALS.map(({ icon: Icon, label }) => (
+                <motion.a
+                  key={label}
+                  href="#"
+                  aria-label={label}
+                  whileHover={{
+                    scale: 1.1,
+                    borderColor: "rgba(139,92,246,0.5)",
+                  }}
+                  className="w-9 h-9 rounded-lg flex items-center justify-center"
+                  style={{
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(255,255,255,0.07)",
+                  }}
+                >
+                  <Icon size={15} color="rgba(255,255,255,0.45)" />
+                </motion.a>
+              ))}
+            </div> */
+}

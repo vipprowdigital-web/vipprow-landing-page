@@ -25,8 +25,8 @@ export default function ClientExperience() {
         secondaryBtn={{
           text: "Book Free Consultation",
           action: {
-            type: "link",
-            href: "https://vipprow.com/contact",
+            type: "scroll",
+            target: "#contact",
           },
         }}
       />

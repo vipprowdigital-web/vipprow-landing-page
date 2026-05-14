@@ -1,7 +1,5 @@
 // const LogoConveyor = ({ data }) => {
 
-import React from "react";
-
 const LogoConveyor = ({ data }) => {
   // Split data into 3 chunks
   const rowCount = 3;

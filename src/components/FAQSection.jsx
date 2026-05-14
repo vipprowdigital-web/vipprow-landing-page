@@ -1,6 +1,7 @@
 // components/FAQSection.jsx
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { scrollTo } from "../utils/scrollTo";
 
 const gradText = {
   background: "linear-gradient(135deg,#8B5CF6,#c084fc)",
@@ -96,8 +97,9 @@ export default function FAQSection({ FAQS }) {
         >
           <p className="text-sm text-white/40 mb-4">Still have questions?</p>
 
-          <a
-            href="https://vipprow.com/contact"
+          <button
+            onClick={() => scrollTo("contact")}
+            // href="https://vipprow.com/contact"
             className="px-6 py-3 rounded-xl text-sm font-semibold text-white
                        transition-all duration-300 hover:scale-[1.03]"
             style={{
@@ -106,7 +108,7 @@ export default function FAQSection({ FAQS }) {
             }}
           >
             Book a Free Strategy Call
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

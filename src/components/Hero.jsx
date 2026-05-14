@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { scrollTo } from "../utils/scrollTo";
 
 // ── Animation variants ──────────────────────────────────────────────────────
 const container = {
@@ -222,7 +223,8 @@ export default function Hero() {
               boxShadow: "0 0 48px rgba(139,92,246,0.55)",
             }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => window.open("https://vipprow.com/contact", "_blank")}
+            // onClick={() => window.open("https://vipprow.com/contact", "_blank")}
+            onClick={() => scrollTo("contact")}
             className="inline-flex items-center gap-2 text-white font-medium text-base
              px-7 py-3.5 rounded-xl border-none cursor-pointer"
             style={{

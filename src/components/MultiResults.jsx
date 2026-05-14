@@ -1,6 +1,7 @@
 // components/MultiResults.jsx
 import { motion } from "framer-motion";
 import Divider from "./Divider";
+import { scrollTo } from "../utils/scrollTo";
 
 const SNAP = [
   { num: "8×", label: "ROI Growth" },
@@ -385,20 +386,21 @@ export default function MultiResults() {
             in one place.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="https://vipprow.com/contact"
+            <button
+              // href="https://vipprow.com/contact"
+              onClick={() => scrollTo("contact")}
               className="px-8 py-4 rounded-xl font-sora font-bold text-sm text-white
               bg-linear-to-br from-violet-700 to-violet-500 hover:opacity-85 transition-opacity"
             >
               Book Free Strategy Call
-            </a>
-            <a
-              href="https://vipprow.com/contact"
+            </button>
+            <button
+              onClick={() => scrollTo("contact")}
               className="px-8 py-4 rounded-xl text-sm font-medium text-white/60
               border border-purple-500/35 hover:border-purple-500/70 hover:text-white transition-all"
             >
               Get Free Marketing Audit
-            </a>
+            </button>
           </div>
         </motion.div>
       </section>

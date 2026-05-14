@@ -14,6 +14,8 @@ import {
 import FAQSection from "../components/FAQSection";
 import { FAQS_PAGE_3 } from "../seeds/FAQs";
 import ClientExpHero from "../components/ClientExpHero";
+import CertificatesSection from "../components/CertificatesSection";
+import { scrollTo } from "../utils/scrollTo";
 
 const gradText = {
   background: "linear-gradient(135deg,#8B5CF6,#c084fc)",
@@ -92,8 +94,8 @@ export default function Milestones() {
         secondaryBtn={{
           text: "Start Your Growth Journey",
           action: {
-            type: "link",
-            href: "https://vipprow.com/contact",
+            type: "scroll",
+            target: "#contact",
           },
         }}
       />
@@ -264,6 +266,8 @@ export default function Milestones() {
             </div>
           </motion.div>
 
+          <CertificatesSection />
+
           {/* PHASES */}
           <motion.div className="mb-24">
             <h2 className="text-3xl font-bold mb-8 text-center">
@@ -316,18 +320,18 @@ export default function Milestones() {
             </p>
 
             <div className="flex justify-center gap-4 flex-wrap">
-              <a
+              <button
                 className="px-6 py-3 bg-purple-600 rounded-xl"
-                href="https://vipprow.com/contact"
+                onClick={() => scrollTo("contact")}
               >
                 Book Free Strategy Call
-              </a>
-              <a
+              </button>
+              <button
                 className="px-6 py-3 border border-white/20 rounded-xl"
-                href="https://vipprow.com/contact"
+                onClick={() => scrollTo("contact")}
               >
                 Start Scaling Today
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>
