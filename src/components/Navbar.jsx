@@ -85,10 +85,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <motion.button
-          onClick={() => {
-            scrollTo("contact");
-            setMobileOpen((v) => !v);
-          }}
+          onClick={() => scrollTo("contact")}
           rel="noopener noreferrer"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
