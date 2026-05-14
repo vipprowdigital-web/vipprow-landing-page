@@ -56,20 +56,21 @@ export function ContactForm() {
     const fetchServices = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8000/api/v1/service/public/names",
+          `${import.meta.env.VITE_VIPPROW_API_URL}/service/public/names`,
           {
             method: "GET",
           },
         );
         if (response.ok) {
           const data = await response.json();
-          console.log("Data from services: ", data);
+          // console.log("Data from services: ", data);
           setServices(data.data);
         } else {
-          console.error("Error fetching services...");
+          // console.error("Error fetching services...");
         }
-      } catch (err) {
-        console.error("Error while making API call..", err);
+      } catch (e) {
+        console.error(e);
+        // console.error("Error while making API call..", err);
       } finally {
         setLoading(false);
       }
@@ -102,11 +103,14 @@ export function ContactForm() {
         type: "Services",
         services: [form.service],
       };
-      const response = await fetch("http://localhost:8000/api/v1/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_VIPPROW_API_URL}/contact`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        },
+      );
       if (response.ok) {
         const data = await response.json();
         console.log("Data from response: ", data);
@@ -439,7 +443,7 @@ export default function Footer() {
   return (
     <>
       {/* Contact section */}
-      <section id="contact" className="relative z-10 py-24 px-6 md:px-10">
+      {/* <section id="contact" className="relative z-10 py-24 px-4 md:px-10">
         <div className="max-w-2xl mx-auto text-center">
           <motion.p
             className="section-label mb-3"
@@ -478,7 +482,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="rounded-2xl p-8 text-left"
+            className="rounded-2xl px-4 py-5 sm:p-8 text-left"
             style={{
               background: "rgba(255,255,255,0.03)",
               border: "1px solid rgba(255,255,255,0.07)",
@@ -487,7 +491,7 @@ export default function Footer() {
             <ContactForm />
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       {/* <footer
@@ -574,6 +578,7 @@ export default function Footer() {
       <footer
         className="relative z-10 px-6 md:px-10 pt-12 pb-8"
         style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+        id="contact"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row justify-between gap-14 mb-12">

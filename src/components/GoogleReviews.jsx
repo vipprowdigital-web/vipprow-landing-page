@@ -170,7 +170,7 @@ const GoogleReviews = () => {
             What clients say
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-semibold mb-3 gradient-text-2-2 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 gradient-text-2-2 leading-tight">
             Trusted by our{" "}
             <span className="violet-gradient-text">community</span>
           </h2>

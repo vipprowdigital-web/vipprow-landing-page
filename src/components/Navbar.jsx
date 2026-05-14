@@ -85,7 +85,10 @@ export default function Navbar() {
 
         {/* CTA */}
         <motion.button
-          onClick={() => scrollTo("contact")}
+          onClick={() => {
+            scrollTo("contact");
+            setMobileOpen((v) => !v);
+          }}
           rel="noopener noreferrer"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
@@ -140,7 +143,10 @@ export default function Navbar() {
               );
             })}
             <button
-              onClick={() => scrollTo("contact")}
+              onClick={() => {
+                scrollTo("contact");
+                setMobileOpen((v) => !v);
+              }}
               className="mt-2 text-center text-sm font-medium text-white py-3 px-4 rounded-xl
                          border-none cursor-pointer"
               style={{ background: "linear-gradient(135deg,#8B5CF6,#6D28D9)" }}
