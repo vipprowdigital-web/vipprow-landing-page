@@ -68,7 +68,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.div
                       layoutId="nav-underline"
-                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-violet-500"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-violet-500"
                       initial={false}
                       transition={{
                         type: "spring",

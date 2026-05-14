@@ -74,7 +74,7 @@ function ServiceCard({ Icon, title, pills, focus, index }) {
 
       {/* Icon */}
       <div
-        className="w-13 h-13 rounded-xl flex items-center justify-center text-2xl mb-6 relative z-10 flex-shrink-0 brand-color"
+        className="w-13 h-13 rounded-xl flex items-center justify-center text-2xl mb-6 relative z-10 shrink-0 brand-color"
         style={{
           width: 52,
           height: 52,
@@ -101,7 +101,7 @@ function ServiceCard({ Icon, title, pills, focus, index }) {
             className="flex items-center gap-2.5 text-white/60 text-sm"
           >
             <span
-              className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+              className="w-1.5 h-1.5 rounded-full shrink-0"
               style={{
                 background: "#8B5CF6",
                 boxShadow: "0 0 6px rgba(139,92,246,0.6)",

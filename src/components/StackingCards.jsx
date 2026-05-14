@@ -75,7 +75,7 @@ export default function StackingCards({ cards = CARDS }) {
           return (
             <div
               key={card.tag}
-              className={`sticky rounded-2xl border p-10 md:p-12 min-h-[300px] flex flex-col justify-between mb-4
+              className={`sticky rounded-2xl border p-10 md:p-12 min-h-75 flex flex-col justify-between mb-4
                 ${t.bg} ${t.border}`}
               style={{ top: topPx, zIndex: i + 1 }}
             >
