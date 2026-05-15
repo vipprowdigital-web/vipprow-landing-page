@@ -160,6 +160,8 @@ const GoogleReviews = () => {
 
   const currentReview = reviews[activeIndex];
 
+  if (reviews.length === 0) return null;
+
   return (
     <section className="relative py-20 px-6 overflow-hidden bg-[#050508] text-white">
       <div className="relative z-10 max-w-215 mx-auto">

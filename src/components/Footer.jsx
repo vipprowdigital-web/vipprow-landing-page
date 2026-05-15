@@ -112,8 +112,8 @@ export function ContactForm() {
         },
       );
       if (response.ok) {
-        const data = await response.json();
-        console.log("Data from response: ", data);
+        // const data = await response.json();
+        // console.log("Data from response: ", data);
         setSubmitted(true);
       }
     } catch (err) {
@@ -414,21 +414,21 @@ const FOOTER_COLS = [
   {
     heading: "Services",
     links: [
-      "Performance Ads",
-      "Branding",
-      "SEO",
-      "Web Experience",
-      "Content Strategy",
+      { name: "Performance Ads", href: "/" },
+      { name: "Branding", href: "/" },
+      { name: "SEO", href: "/" },
+      { name: "Web Experience", href: "/" },
+      { name: "Content Strategy", href: "/" },
     ],
   },
   {
     heading: "Company",
-    links: ["About", "Portfolio"],
+    links: [
+      { name: "About", href: "/#about" },
+      { name: "Clients", href: "/client-experience" },
+      { name: "Milestones", href: "/milestones" },
+    ],
   },
-  // {
-  //   heading: "Contact",
-  //   links: ["vipprowdigital@gmail.com", "+91 96699 32121", "Jabalpur, India"],
-  // },
 ];
 
 // const SOCIALS = [
@@ -443,7 +443,7 @@ export default function Footer() {
   return (
     <>
       {/* Contact section */}
-      {/* <section id="contact" className="relative z-10 py-24 px-4 md:px-10">
+      <section id="contact" className="relative z-10 py-24 px-4 md:px-10">
         <div className="max-w-2xl mx-auto text-center">
           <motion.p
             className="section-label mb-3"
@@ -491,7 +491,7 @@ export default function Footer() {
             <ContactForm />
           </motion.div>
         </div>
-      </section> */}
+      </section>
 
       {/* Footer */}
       {/* <footer
@@ -615,12 +615,12 @@ export default function Footer() {
 
                   <ul className="flex flex-col gap-2.5 list-none">
                     {col.links.map((link) => (
-                      <li key={link}>
+                      <li key={link.name}>
                         <a
-                          href="/"
+                          href={link.href}
                           className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
                         >
-                          {link}
+                          {link.name}
                         </a>
                       </li>
                     ))}

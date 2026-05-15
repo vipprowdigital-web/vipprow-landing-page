@@ -63,7 +63,7 @@ export default function Approach() {
           {CARDS.map((card, i) => (
             <div
               key={card.tag}
-              className={`sticky rounded-3xl p-10 md:p-12 min-h-[280px] flex flex-col justify-between mb-4 border
+              className={`sticky rounded-3xl p-10 md:p-12 min-h-70 flex flex-col justify-between mb-4 border
                 ${card.bg} ${card.border}`}
               style={{ top: TOP_BASE + i * TOP_STEP, zIndex: i + 1 }}
             >
@@ -75,7 +75,7 @@ export default function Approach() {
                   style={{ color: card.color }}
                 >
                   <span
-                    className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    className="w-1.5 h-1.5 rounded-full shrink-0"
                     style={{ background: card.color }}
                   />
                   {card.tag}
@@ -97,7 +97,7 @@ export default function Approach() {
                 <span className="text-xs text-white/25 tracking-wider">
                   {card.badge}
                 </span>
-                <span className="text-xs font-medium px-4 py-1.5 rounded-full border border-white/[0.12] text-white/40">
+                <span className="text-xs font-medium px-4 py-1.5 rounded-full border border-white/12 text-white/40">
                   {card.tag}
                 </span>
               </div>
@@ -114,7 +114,7 @@ export default function Approach() {
           }}
         >
           <span
-            className="w-2.5 h-2.5 rounded-full flex-shrink-0 animate-pulse"
+            className="w-2.5 h-2.5 rounded-full shrink-0 animate-pulse"
             style={{
               background: "#8B5CF6",
               boxShadow: "0 0 14px rgba(139,92,246,0.8)",
