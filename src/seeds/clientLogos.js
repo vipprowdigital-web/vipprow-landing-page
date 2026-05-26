@@ -1,22 +1,22 @@
 const clientLogos = [
   {
     name: "THC – Triveni Health Care",
-    logo: "/images/triveni-healthcare-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712864/triveni-healthcare-logo_szclah.jpg",
     domain: "Healthcare",
   },
   {
     name: "Spasht",
-    logo: "/images/spasht-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712864/spasht-logo_irdpkf.jpg",
     domain: "Healthcare",
   },
   {
     name: "Gargi Dental Care",
-    logo: "/images/gargi-dental-care-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712863/gargi-dental-care-logo_laxngf.png",
     domain: "Healthcare",
   },
   {
     name: "Dental Square",
-    logo: "/images/dental-square.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712863/dental-square_ajldkg.png",
     domain: "Healthcare",
   },
   {
@@ -31,7 +31,7 @@ const clientLogos = [
   },
   {
     name: "Light Studio - Graphic Design & Photography",
-    logo: "/images/light-studio-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713393/light-studio-logo_wi9iz6.jpg",
     domain: "Electrical's & Electronics",
   },
   {
@@ -46,7 +46,7 @@ const clientLogos = [
   },
   {
     name: "Skhikhar Infotech",
-    logo: "/images/shikhar-infotech-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713484/shikhar-infotech-logo_opkwmt.png",
     domain: "Electrical's & Electronics",
   },
   {
@@ -56,12 +56,12 @@ const clientLogos = [
   },
   {
     name: "Lenovo",
-    logo: "/images/lenovo-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713393/lenovo-logo_z572y2.png",
     domain: "Electrical's & Electronics",
   },
   {
     name: "Livewire",
-    logo: "/images/livewire-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712367/livewire-logo_ducl6n.png",
     domain: "Education",
   },
   {
@@ -71,57 +71,57 @@ const clientLogos = [
   },
   {
     name: "Dream Zone school of creative studies",
-    logo: "/images/dreamzone-school-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712367/dreamzone-school-logo_evsrsp.webp",
     domain: "Education",
   },
   {
     name: "Stemfield International School",
-    logo: "/images/stemfield-school-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712368/stemfield-school-logo_b3knvj.webp",
     domain: "Education",
   },
   {
     name: "Mangaldeep",
-    logo: "/images/mangaldeep-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713634/mangaldeep-logo_uoyyt4.webp",
     domain: "Clothing",
   },
   {
     name: "Intenics",
-    logo: "/images/intenics-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713740/intenics-logo_j36fxg.jpg",
     domain: "Solar",
   },
   {
     name: "Waaree Solar Americas Inc",
-    logo: "/images/waaree-americas-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713742/waaree-americas-logo_omw0rj.jpg",
     domain: "Solar",
   },
   {
     name: "Solar Square",
-    logo: "/images/solarsquare-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713741/solarsquare-logo_mjpe9d.png",
     domain: "Solar",
   },
   {
     name: "Vardhman Jewellers",
-    logo: "/images/vardhman-jewellers-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713878/vardhman-jewellers-logo_sps19p.jpg",
     domain: "Jewellers",
   },
   {
     name: "DFashionista",
-    logo: "/images/dfashionista-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713962/dfashionista-logo_sfqnc4.jpg",
     domain: "Other",
   },
   {
     name: "UK International London Beauty School",
-    logo: "/images/london-beuaty-school.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713963/london-beuaty-school_zhrgka.png",
     domain: "Other",
   },
   {
     name: "SDPL",
-    logo: "/images/sdpl-logo.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713965/sdpl-logo_zeokhn.png",
     domain: "Other",
   },
   {
     name: "Music Mania",
-    logo: "/images/music-mania-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713964/music-mania-logo_rypmox.jpg",
     domain: "Other",
   },
   {
@@ -131,12 +131,12 @@ const clientLogos = [
   },
   {
     name: "Pacelab",
-    logo: "/images/pacelab-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713964/pacelab-logo_v5x0hz.webp",
     domain: "Other",
   },
   {
     name: "Lemontree Hotels",
-    logo: "/images/lemon-tree-hotel-logo.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779776457/lemon-tree-hotel-logo_otuur0.jpg",
     domain: "Other",
   },
   //   {
@@ -151,12 +151,12 @@ const clientLogos = [
   },
   {
     name: "UWO",
-    logo: "/images/uwo-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779714291/uwo-logo_hpkixt.webp",
     domain: "Other",
   },
   {
     name: "UWO Video",
-    logo: "/images/uwo-video-logo.webp",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779714292/uwo-video-logo_hagu11.webp",
     domain: "Other",
   },
   {
