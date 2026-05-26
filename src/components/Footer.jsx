@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Loader2, Rocket } from "lucide-react";
+import { Send, Loader2, Rocket, ArrowUpRight } from "lucide-react";
+
+// const SERVICES = [
+//   "CRM Automation",
+//   "WhatsApp Automation",
+//   "Social Media Marketing",
+//   "Web Development",
+//   "Software Development",
+//   "Graphic Design",
+//   "Pay Per Click Advertising",
+//   "Content Marketing",
+//   "Generative A.I Automation",
+// ];
 
 const INDIAN_STATES = [
   "Andhra Pradesh",
@@ -34,18 +46,6 @@ const INDIAN_STATES = [
   "Delhi",
   "Chandigarh",
 ];
-
-// const SERVICES = [
-//   "CRM Automation",
-//   "WhatsApp Automation",
-//   "Social Media Marketing",
-//   "Web Development",
-//   "Software Development",
-//   "Graphic Design",
-//   "Pay Per Click Advertising",
-//   "Content Marketing",
-//   "Generative A.I Automation",
-// ];
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -493,8 +493,155 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Footer */}
-      {/* <footer
+      {/* Top row */}
+      <footer
+        className="relative z-10 px-6 md:px-10 pt-12 pb-8"
+        style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+        id="contact"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between gap-14 mb-12">
+            {/* BRAND */}
+
+            <div className="lg:max-w-md">
+              <img
+                src="/images/vipprow-logo-removebg-preview.png"
+                alt="VIPPROW Logo"
+                className="w-40 mb-4"
+              />
+
+              <p className="text-white/25 text-sm leading-relaxed">
+                Let Vipprow be your partner in achieving unparalleled digital
+                success. Together, we’ll create impactful stories that resonate
+                with your audience and deliver lasting results.
+              </p>
+
+              <p className="text-white/45 mt-4 text-sm italic">
+                Build. Scale. Dominate.
+              </p>
+              {/* ── NEW: PORTFOLIO REDIRECT SECTION ── */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.18 }}
+                className="mb-6 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between text-left gap-4 my-4"
+                style={{
+                  background: "rgba(139, 92, 246, 0.05)",
+                  border: "1px solid rgba(139, 92, 246, 0.2)",
+                }}
+              >
+                <div>
+                  <h4 className="font-sora font-semibold text-sm text-white mb-0.5">
+                    Viewing Showcase Portfolio
+                  </h4>
+                  <p className="text-white/50 text-xs leading-normal">
+                    You are currently exploring our interactive showcase. To
+                    check active availability, corporate tools, or place
+                    real-time corporate business contracts, visit our production
+                    link.
+                  </p>
+                </div>
+                <a
+                  href="https://vipprow.com" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white transition-all duration-300 hover:bg-violet-600/20"
+                  style={{
+                    background: "rgba(139, 92, 246, 0.15)",
+                    border: "1px solid rgba(139, 92, 246, 0.4)",
+                  }}
+                >
+                  Official Website <ArrowUpRight size={14} />
+                </a>
+              </motion.div>
+              {/* ───────────────────────────────────── */}
+            </div>
+
+            {/* LINKS */}
+
+            <div className="grid grid-cols-2 gap-x-14 gap-y-10">
+              {/* DYNAMIC COLS */}
+
+              {FOOTER_COLS.map((col) => (
+                <div key={col.heading}>
+                  <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
+                    {col.heading}
+                  </h4>
+
+                  <ul className="flex flex-col gap-2.5 list-none">
+                    {col.links.map((link) => (
+                      <li key={link.name}>
+                        {link.href === "/" ? (
+                          <p className="text-[0.8rem] text-white/50">
+                            {link.name}
+                          </p>
+                        ) : (
+                          <a
+                            href={link.href}
+                            className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                          >
+                            {link.name}
+                          </a>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+
+              {/* CONTACT */}
+
+              <div>
+                <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
+                  Contact
+                </h4>
+
+                <ul className="w-full flex flex-col gap-2.5 list-none">
+                  <li>
+                    <a
+                      href="mailto:vipprowdigital@gmail.com"
+                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      vipprowdigital@gmail.com
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="tel:9669932121"
+                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
+                    >
+                      +91 96699 32121
+                    </a>
+                  </li>
+
+                  <li className="text-[0.8rem] text-white/50">
+                    Jabalpur, India
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+          >
+            <p className="text-white/25 text-xs">
+              &copy; {new Date().getFullYear()} VIPPROW. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+{
+  /* Footer */
+}
+{
+  /* <footer
         className="relative z-10 px-6 md:px-10 pt-12 pb-8"
         style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
       >
@@ -573,106 +720,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-      </footer> */}
-      {/* Top row */}
-      <footer
-        className="relative z-10 px-6 md:px-10 pt-12 pb-8"
-        style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
-        id="contact"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between gap-14 mb-12">
-            {/* BRAND */}
-
-            <div className="lg:max-w-md">
-              <img
-                src="/images/vipprow-logo-removebg-preview.png"
-                alt="VIPPROW Logo"
-                className="w-40 mb-4"
-              />
-
-              <p className="text-white/25 text-sm leading-relaxed">
-                Let Vipprow be your partner in achieving unparalleled digital
-                success. Together, we’ll create impactful stories that resonate
-                with your audience and deliver lasting results.
-              </p>
-
-              <p className="text-white/45 mt-4 text-sm italic">
-                Build. Scale. Dominate.
-              </p>
-            </div>
-
-            {/* LINKS */}
-
-            <div className="grid grid-cols-2 gap-x-14 gap-y-10">
-              {/* DYNAMIC COLS */}
-
-              {FOOTER_COLS.map((col) => (
-                <div key={col.heading}>
-                  <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
-                    {col.heading}
-                  </h4>
-
-                  <ul className="flex flex-col gap-2.5 list-none">
-                    {col.links.map((link) => (
-                      <li key={link.name}>
-                        <a
-                          href={link.href}
-                          className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
-                        >
-                          {link.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-
-              {/* CONTACT */}
-
-              <div>
-                <h4 className="font-sora text-[0.65rem] tracking-widest uppercase text-white/30 mb-4">
-                  Contact
-                </h4>
-
-                <ul className="w-full flex flex-col gap-2.5 list-none">
-                  <li>
-                    <a
-                      href="mailto:vipprowdigital@gmail.com"
-                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
-                    >
-                      vipprowdigital@gmail.com
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="tel:9669932121"
-                      className="text-[0.8rem] text-white/50 hover:text-white transition-colors duration-200"
-                    >
-                      +91 96699 32121
-                    </a>
-                  </li>
-
-                  <li className="text-[0.8rem] text-white/50">
-                    Jabalpur, India
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6"
-            style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
-          >
-            <p className="text-white/25 text-xs">
-              &copy; {new Date().getFullYear()} VIPPROW. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </>
-  );
+      </footer> */
 }
 
 // import { useState } from "react";

@@ -185,7 +185,7 @@ export default function About() {
             transition={{ duration: 0.55, delay: 0.7 }}
           >
             <span
-              className="w-2.5 h-2.5 rounded-full bg-violet-500 flex-shrink-0
+              className="w-2.5 h-2.5 rounded-full bg-violet-500 shrink-0
               shadow-[0_0_12px_#8B5CF6] animate-pulse"
             />
             <p className="text-white/50 text-sm">

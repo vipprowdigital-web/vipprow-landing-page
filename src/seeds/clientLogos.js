@@ -21,7 +21,7 @@ const clientLogos = [
   },
   {
     name: "Bindu Electrical's",
-    logo: "https://binduelectricals.in/storage/channel/1/vVGjImErvmsmiRzdoMjfs2OnnfxPg0yrVuMyuPy8.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713393/bindu-elec-logo_zd2xhv.png",
     domain: "Electrical's & Electronics",
   },
   {
@@ -36,12 +36,12 @@ const clientLogos = [
   },
   {
     name: "Microland Computers",
-    logo: "https://www.microlandcomputer.in/LOGO.jpeg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713394/microland-logo_kgxsmm.jpg",
     domain: "Electrical's & Electronics",
   },
   {
     name: "ASUS",
-    logo: "https://www.vectorlogo.es/wp-content/uploads/2019/08/logo-vector-asus.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713393/logo-asus_vsgt23.webp",
     domain: "Electrical's & Electronics",
   },
   {
@@ -51,7 +51,7 @@ const clientLogos = [
   },
   {
     name: "Acer",
-    logo: "https://english.cdn.zeenews.com/sites/default/files/2020/06/01/864236-acer.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779713484/864236-acer_k71bxo.avif",
     domain: "Electrical's & Electronics",
   },
   {
@@ -66,7 +66,7 @@ const clientLogos = [
   },
   {
     name: "Edify School",
-    logo: "https://i.pinimg.com/originals/41/97/17/419717654ace8e7b8d10cb1a22844470.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779712780/edify-school-logo_aswc4t.png",
     domain: "Education",
   },
   {
@@ -126,7 +126,7 @@ const clientLogos = [
   },
   {
     name: "VadooTV",
-    logo: "https://blusteak.com/wp-content/uploads/2023/10/Artboard-2-1.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779714471/vadoo-tv-logo_pkyuxu.jpg",
     domain: "Other",
   },
   {
@@ -136,7 +136,7 @@ const clientLogos = [
   },
   {
     name: "Lemontree Hotels",
-    logo: "https://vectorseek.com/wp-content/uploads/2023/09/Lemon-Tree-Hotels-Logo-Vector.svg-.png",
+    logo: "/images/lemon-tree-hotel-logo.jpg",
     domain: "Other",
   },
   //   {
@@ -146,7 +146,7 @@ const clientLogos = [
   //   },
   {
     name: "Samdareeya Hotels",
-    logo: "https://samdareeyahotel.in/images/logo-remove-bg.png",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779714382/samdareeya-logo_t1abh1.png",
     domain: "Other",
   },
   {
@@ -161,7 +161,7 @@ const clientLogos = [
   },
   {
     name: "GLU Studio",
-    logo: "https://media.designrush.com/agencies/360901/conversions/Glu-Studios-logo-profile.jpg",
+    logo: "https://res.cloudinary.com/dh87x8i37/image/upload/v1779714391/glud-studio-logo_dea1tx.jpg",
     domain: "Other",
   },
 ];

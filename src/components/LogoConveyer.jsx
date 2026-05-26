@@ -32,7 +32,7 @@ const LogoConveyor = ({ data }) => {
           Industry Partners
         </div>
         <h2 className="font-sora font-extrabold text-2xl sm:text-4xl md:text-5xl text-white mb-6">
-          Global <span style={gradText}>Reach</span>
+          Our<span style={gradText}> Clients</span>
         </h2>
       </div>
 
