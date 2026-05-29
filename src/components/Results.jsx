@@ -1,11 +1,22 @@
 // components/Results.jsx
 import { motion } from "framer-motion";
+import {
+  ChartArea,
+  Bot,
+  TrendingUp,
+  Handshake,
+  RefreshCcw,
+  ChevronsRight,
+} from "lucide-react";
 
 const STATS = [
   { num: "3–10×", label: "Growth in Leads" },
   { num: "40%↓", label: "Reduction in Cost Per Lead" },
   { num: "↑CVR", label: "Improved Conversion Rates" },
-  { num: "🔁", label: "Consistent Monthly Lead Flow" },
+  {
+    num: <RefreshCcw size={24} color="#8b5cf6" />,
+    label: "Consistent Monthly Lead Flow",
+  },
 ];
 
 const CLIENT_ROWS = [
@@ -15,11 +26,17 @@ const CLIENT_ROWS = [
 ];
 
 const WHY = [
-  { icon: "📊", label: "Data-Driven Execution" },
-  { icon: "🤖", label: "AI-Powered Systems" },
-  { icon: "🔄", label: "End-to-End Solutions" },
-  { icon: "📈", label: "Proven Results" },
-  { icon: "🤝", label: "Dedicated Support" },
+  {
+    icon: <ChartArea size={18} color="#8b5cf6" />,
+    label: "Data-Driven Execution",
+  },
+  { icon: <Bot size={18} color="#8b5cf6" />, label: "AI-Powered Systems" },
+  {
+    icon: <RefreshCcw size={18} color="#8b5cf6" />,
+    label: "End-to-End Solutions",
+  },
+  { icon: <TrendingUp size={18} color="#8b5cf6" />, label: "Proven Results" },
+  { icon: <Handshake size={18} color="#8b5cf6" />, label: "Dedicated Support" },
 ];
 
 const grad = {
@@ -119,7 +136,7 @@ export default function Results() {
               border: "1px solid rgba(139,92,246,0.28)",
             }}
           >
-            👉 &nbsp;3× Lead Growth in 45 Days
+            <ChevronsRight /> &nbsp;3× Lead Growth in 45 Days
           </div>
         </motion.div>
 

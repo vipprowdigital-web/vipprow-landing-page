@@ -10,6 +10,8 @@ import {
   Palette,
   ShoppingCart,
   CheckCircle,
+  EarthIcon,
+  Lightbulb,
 } from "lucide-react";
 import FAQSection from "../components/FAQSection";
 import { FAQS_PAGE_3 } from "../seeds/FAQs";
@@ -72,7 +74,7 @@ const PHASES = [
   "Shifted towards ROI-driven campaigns",
   "Introduced funnels + automation",
   "Built tools like Croissix",
-  "Creating complete business OS 🚀",
+  "Creating complete business OS",
 ];
 
 export default function Milestones() {
@@ -269,7 +271,7 @@ export default function Milestones() {
           <CertificatesSection />
 
           {/* PHASES */}
-          <motion.div className="mb-24">
+          <motion.div className="mb-24 mt-10">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Growth <span style={gradText}>Evolution</span>
             </h2>
@@ -293,14 +295,18 @@ export default function Milestones() {
           {/* VISION + MISSION */}
           <motion.div className="grid md:grid-cols-2 gap-6 mb-24">
             <div className="p-6 border border-white/10 rounded-xl">
-              <h3 className="font-bold mb-3">🌍 Our Vision</h3>
+              <h3 className="font-bold mb-3 inline-flex gap-3">
+                <EarthIcon color="#8b5cf6" /> Our Vision
+              </h3>
               <p className="text-white/60">
                 To become India’s leading AI-powered business growth ecosystem
               </p>
             </div>
 
             <div className="p-6 border border-white/10 rounded-xl">
-              <h3 className="font-bold mb-3">💡 Our Mission</h3>
+              <h3 className="font-bold mb-3 inline-flex gap-3">
+                <Lightbulb color="yellow" /> Our Mission
+              </h3>
               <ul className="text-white/60 space-y-2">
                 <li>• Generate consistent leads</li>
                 <li>• Automate operations</li>

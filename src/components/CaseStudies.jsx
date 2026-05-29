@@ -1,5 +1,6 @@
 // components/FeaturedCase.jsx
 import { motion } from "framer-motion";
+import { Rocket, Target, ChartArea, RefreshCcw } from "lucide-react";
 
 const STRATEGY = [
   {
@@ -21,17 +22,32 @@ const STRATEGY = [
 ];
 
 const EXECUTION = [
-  { icon: "🚀", text: "Multi-platform campaign launch" },
-  { icon: "🎯", text: "Audience testing & optimization" },
-  { icon: "📊", text: "Funnel tracking & improvement" },
-  { icon: "🔁", text: "Continuous data-driven scaling" },
+  {
+    icon: <Rocket size={18} color="#8b5cf6" />,
+    text: "Multi-platform campaign launch",
+  },
+  {
+    icon: <Target size={18} color="#8b5cf6" />,
+    text: "Audience testing & optimization",
+  },
+  {
+    icon: <ChartArea size={18} color="#8b5cf6" />,
+    text: "Funnel tracking & improvement",
+  },
+  {
+    icon: <RefreshCcw size={18} color="#8b5cf6" />,
+    text: "Continuous data-driven scaling",
+  },
 ];
 
 const RESULTS = [
   { num: "3×", label: "Lead Growth in 45 Days" },
   { num: "40%↓", label: "Cost Per Lead" },
   { num: "B2B", label: "High-Quality Inquiries" },
-  { num: "🔁", label: "Consistent Lead Flow" },
+  {
+    num: <RefreshCcw size={20} color="#c084fc" />,
+    label: "Consistent Lead Flow",
+  },
 ];
 
 const gradText = {
@@ -217,7 +233,7 @@ export default function FeaturedCase() {
                   }}
                 >
                   <p
-                    className="font-sora font-extrabold text-2xl mb-1 leading-none"
+                    className="font-sora font-extrabold text-2xl mb-1 leading-none text-center flex justify-center"
                     style={gradText}
                   >
                     {r.num}

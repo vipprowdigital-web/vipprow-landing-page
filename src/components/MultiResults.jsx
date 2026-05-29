@@ -2,18 +2,35 @@
 import { motion } from "framer-motion";
 import Divider from "./Divider";
 import { scrollTo } from "../utils/scrollTo";
+import {
+  RefreshCcw,
+  GraduationCap,
+  Hospital,
+  ShoppingBag,
+  Search,
+  Brain,
+  Settings,
+  ChartArea,
+  Rocket,
+  Zap,
+  Target,
+  MessageCircle, Flame
+} from "lucide-react";
 
 const SNAP = [
   { num: "8×", label: "ROI Growth" },
   { num: "↑", label: "High Quality Leads" },
-  { num: "🔄", label: "Automated Follow-up" },
+  {
+    num: <RefreshCcw size={24} color="#8b5cf6" />,
+    label: "Automated Follow-up",
+  },
   { num: "↓CPA", label: "Lower Acquisition Cost" },
   { num: "↑CVR", label: "Better Conversions" },
 ];
 
 const INDUSTRIES = [
   {
-    icon: "🎓",
+    icon: <GraduationCap size={24} color="#8b5cf6" />,
     sector: "Education",
     title: "EdTech Brand",
     rows: [
@@ -23,7 +40,7 @@ const INDUSTRIES = [
     ],
   },
   {
-    icon: "🛍️",
+    icon: <ShoppingBag size={24} color="#8b5cf6" />,
     sector: "Local Business",
     title: "Retail & Local",
     rows: [
@@ -33,7 +50,7 @@ const INDUSTRIES = [
     ],
   },
   {
-    icon: "🏥",
+    icon: <Hospital size={24} color="#8b5cf6" />,
     sector: "Healthcare",
     title: "Healthcare Client",
     rows: [
@@ -47,31 +64,31 @@ const INDUSTRIES = [
 const STEPS = [
   {
     num: "01",
-    icon: "🔍",
+    icon: <Search size={24} color="#8b5cf6" />,
     title: "Deep Understanding",
     desc: "Your business, audience & market",
   },
   {
     num: "02",
-    icon: "🧠",
+    icon: <Brain size={24} color="#8b5cf6" />,
     title: "Custom Strategy",
     desc: "No templates. Only tailored plans",
   },
   {
     num: "03",
-    icon: "⚙️",
+    icon: <Settings size={24} color="#8b5cf6" />,
     title: "System Building",
     desc: "Ads + Funnel + Automation",
   },
   {
     num: "04",
-    icon: "📊",
+    icon: <ChartArea size={24} color="#8b5cf6" />,
     title: "Optimization",
     desc: "Data-driven improvements",
   },
   {
     num: "05",
-    icon: "🚀",
+    icon: <Rocket size={24} color="#8b5cf6" />,
     title: "Scaling",
     desc: "We scale what works profitably",
   },
@@ -79,22 +96,22 @@ const STEPS = [
 
 const STAY = [
   {
-    icon: "📊",
+    icon: <ChartArea size={20} color="#8b5cf6" />,
     title: "Transparency in Reporting",
     desc: "Full visibility into every metric, always",
   },
   {
-    icon: "⚡",
+    icon: <Zap size={20} color="#8b5cf6" />,
     title: "Real-Time Performance Tracking",
     desc: "Live dashboards, no waiting for monthly reports",
   },
   {
-    icon: "💬",
+    icon: <MessageCircle size={20} color="#8b5cf6" />,
     title: "Fast Communication & Support",
     desc: "Quick responses, dedicated point of contact",
   },
   {
-    icon: "🎯",
+    icon: <Target size={20} color="#8b5cf6" />,
     title: "Focus on Business Outcomes",
     desc: "We measure success by your revenue, not vanity KPIs",
   },
@@ -180,7 +197,7 @@ export default function MultiResults() {
           {INDUSTRIES.map((d, i) => (
             <motion.div
               key={d.sector}
-              className="group relative rounded-2xl p-8 overflow-hidden cursor-default"
+              className="group relative rounded-2xl p-8 overflow-hidden cursor-default flex flex-col items-start"
               style={{
                 background: "rgba(255,255,255,0.03)",
                 border: "1px solid rgba(255,255,255,0.07)",
@@ -202,7 +219,9 @@ export default function MultiResults() {
                     "linear-gradient(135deg,rgba(139,92,246,0.07),transparent)",
                 }}
               />
-              <div className="text-2xl mb-4">{d.icon}</div>
+              <div className="text-2xl mb-4 bg-violet-500/10 p-3 rounded-lg">
+                {d.icon}
+              </div>
               <p className="text-xs font-bold tracking-widest uppercase text-purple-500/70 mb-2">
                 {d.sector}
               </p>
@@ -374,7 +393,7 @@ export default function MultiResults() {
               border: "1px solid rgba(139,92,246,0.25)",
             }}
           >
-            🔥 Ready to grow?
+            <Flame size={18 } /> Ready to grow?
           </div>
           <h2 className="font-sora font-extrabold text-4xl md:text-5xl tracking-tight leading-tight mb-5">
             Want results

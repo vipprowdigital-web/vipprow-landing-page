@@ -1,24 +1,25 @@
 // components/About.jsx
 import { motion } from "framer-motion";
+import { Target, Zap, Bot, TrendingUp } from "lucide-react";
 
 const PILLARS = [
   {
-    icon: "🎯",
+    icon: <Target size={24} color="#8b5cf6" />,
     title: "Traffic Generation",
     desc: "Paid & organic strategies that bring the right audience",
   },
   {
-    icon: "⚡",
+    icon: <Zap size={24} color="#8b5cf6" />,
     title: "Lead Capture",
     desc: "High-converting funnels built to capture & qualify leads",
   },
   {
-    icon: "🤖",
+    icon: <Bot size={24} color="#8b5cf6" />,
     title: "Automation",
     desc: "Smart workflows that nurture leads without manual effort",
   },
   {
-    icon: "📈",
+    icon: <TrendingUp size={24} color="#8b5cf6" />,
     title: "Conversion Optimization",
     desc: "Continuous testing to maximize every rupee spent",
   },
