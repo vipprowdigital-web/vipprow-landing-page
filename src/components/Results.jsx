@@ -8,6 +8,7 @@ import {
   RefreshCcw,
   ChevronsRight,
 } from "lucide-react";
+import IndiaClientMap from "./IndiaClientMap";
 
 const STATS = [
   { num: "3–10×", label: "Growth in Leads" },
@@ -103,6 +104,8 @@ export default function Results() {
           ))}
         </div>
       </div>
+
+      <IndiaClientMap />
 
       {/* ── Client + Why ── */}
       {/* Client Work */}
